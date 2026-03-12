@@ -17,6 +17,8 @@ public sealed class BattleHymnPower : PowerModel
 
     public override async Task BeforeHandDraw(Player player, PlayerChoiceContext choiceContext, CombatState combatState)
     {
+        if (Owner.Player != player) return;
+
         var insightCards = new List<CardModel>();
         // Add Amount Insight cards to hand
         for (var i = 0; i < Amount; i++) insightCards.Add(CombatState.CreateCard<Smite>(player));

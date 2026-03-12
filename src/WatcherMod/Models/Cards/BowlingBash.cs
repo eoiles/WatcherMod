@@ -20,18 +20,16 @@ public sealed class BowlingBash() : CardModel(1, CardType.Attack, CardRarity.Com
 
         // Get CombatState from the target's CombatState
         var combatState = cardPlay.Target.CombatState;
-
         // Count enemies in combat
         if (combatState != null)
         {
             var enemyCount = combatState.Enemies.Count;
-
             // Calculate damage: base damage × enemy count
-            var totalDamage = DynamicVars.Damage.BaseValue * enemyCount;
-
+            var totalDamage = DynamicVars.Damage.BaseValue;
             await DamageCmd.Attack(totalDamage)
                 .FromCard(this)
                 .Targeting(cardPlay.Target)
+                .WithHitCount(enemyCount)
                 .WithHitFx("vfx/vfx_attack_slash")
                 .Execute(choiceContext);
         }
