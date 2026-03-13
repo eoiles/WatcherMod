@@ -21,9 +21,7 @@
 		<Reference Include="0Harmony">
 			<HintPath>$(GameDataDir)\0Harmony.dll</HintPath>
 		</Reference>
-		<Reference Include="GodotSharp">
-			<HintPath>$(GameDataDir)\GodotSharp.dll</HintPath>
-		</Reference>
+	
 		<Reference Include="sts2">
 			<HintPath>$(GameDataDir)\sts2.dll</HintPath>
 		</Reference>
