@@ -151,7 +151,7 @@
   "LIKE_WATER.description": "At the end of your turn, if you are in [gold]Calm[/gold], gain {Block:diff()} [gold]Block[/gold].",
 
   "MEDITATE.title": "Meditate",
-  "MEDITATE.description": "Put {Cards:diff()} {Cards:plural:cards|card} from your discard pile into your hand and [gold]Retain[/gold] {Cards:plural:them|it}.\nEnter [gold]Calm[/gold].\nEnd your turn.",
+  "MEDITATE.description": "Put {Cards:diff()} {Cards:plural:card|cards} from your discard pile into your hand and [gold]Retain[/gold] {Cards:plural:it|them}.\nEnter [gold]Calm[/gold].\nEnd your turn.",
   "MEDITATE.selectionScreenPrompt": "Choose {Amount:plural:a card|[blue]{}[/blue] cards} to [gold]Remain[/gold].",
 
   "MENTAL_FORTRESS.title": "Mental Fortress",
