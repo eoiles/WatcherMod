@@ -15,9 +15,9 @@
   "TEARDROP_LOCKET.flavor": "盒子的主人双目失明，其中的东西无人知晓。",
   "TEARDROP_LOCKET.title": "泪滴吊坠盒",
 
-  "GOLEN_EYE.description": "你每次 [gold]预见[/gold] 时，额外 [gold]预见[/gold] 2张卡牌。",
-  "GOLEN_EYE.flavor": "能够看见近处生灵的心智，让你可以预判他们将来的动作。",
-  "GOLEN_EYE.title": "黄金眼",
+  "GOLDEN_EYE.description": "你每次 [gold]预见[/gold] 时，额外 [gold]预见[/gold] 2张卡牌。",
+  "GOLDEN_EYE.flavor": "能够看见近处生灵的心智，让你可以预判他们将来的动作。",
+  "GOLDEN_EYE.title": "黄金眼",
 
   "HOLY_WATER.description": "替换 [gold]至纯之水[/gold]。在每场战斗开始时，将3张 [gold]奇迹[/gold] 放入你的手牌。",
   "HOLY_WATER.flavor": "从高塔出现的时代前收集来的水。",

@@ -67,4 +67,11 @@
 		<Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ModsOutputDir)" />
 		<Exec Command="&quot;$(GodotExePath)&quot; --headless --path &quot;$(GodotProject)&quot; --export-pack &quot;Windows Desktop&quot; &quot;$(ModsOutputDir)\$(ModName).pck&quot;" ContinueOnError="true" />
 	</Target>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<!-- Path to the game executable -->
+		<StartAction>Program</StartAction>
+		<StartProgram>$(STS2GamePath)\SlayTheSpire2.exe</StartProgram>
+		<StartWorkingDirectory>$(STS2GamePath)</StartWorkingDirectory>
+	</PropertyGroup>
 </Project>
