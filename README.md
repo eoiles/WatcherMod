@@ -1,4 +1,4 @@
-# The Watcher - Slay the Spire II
+# The Watcher - Slay the Spire II - Deprecated Branch without BaseLib as dependency
 
 
 
