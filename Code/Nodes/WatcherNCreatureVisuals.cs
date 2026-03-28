@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Nodes.Combat;
 namespace Watcher.Code.Nodes;
 
 [GlobalClass]
-public partial class SNCreatureVisuals : NCreatureVisuals
+public partial class WatcherNCreatureVisuals : NCreatureVisuals
 {
     private AnimationPlayer? _eyeAnimPlayer;
     private MegaBone? _eyeBone;
@@ -29,13 +29,6 @@ public partial class SNCreatureVisuals : NCreatureVisuals
             GetCurrentBody().Material = premultMat;
 
         //StancePower.EnsureEyeSetup(Body);
-    }
-
-    public void InitEye(MegaSprite controller)
-    {
-        _eyeBone = controller.GetSkeleton().FindBone("eye_anchor");
-        controller.ConnectWorldTransformsChanged(Callable.From<Variant>(OnEyeWorldTransformsChanged));
-        GetTree().ProcessFrame += SetupEye;
     }
 
     private void SetupEye()

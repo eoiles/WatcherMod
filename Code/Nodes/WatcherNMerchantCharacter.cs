@@ -5,7 +5,7 @@ using MegaCrit.Sts2.Core.Nodes.Screens.Shops;
 namespace Watcher.Code.Nodes;
 
 [GlobalClass]
-public partial class SNMerchantCharacter : NMerchantCharacter
+public partial class WatcherNMerchantCharacter : NMerchantCharacter
 {
     public override void _Ready()
     {
@@ -20,7 +20,7 @@ public partial class SNMerchantCharacter : NMerchantCharacter
         var spineBody = new MegaSprite((Variant)(GodotObject)GetChild(0));
         spineBody.SetNormalMaterial(premultMat);
 
-        
+
         PlayAnimation("Idle", true);
     }
 }
