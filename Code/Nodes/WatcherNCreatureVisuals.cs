@@ -24,9 +24,12 @@ public partial class WatcherNCreatureVisuals : NCreatureVisuals
         };
 
         if (SpineBody != null)
+        {
             SpineBody.SetNormalMaterial(premultMat);
+        }
         else
-        { // beta
+        {
+            // beta
             var body = GetNodeOrNull<Node2D>("%Visuals");
             if (body != null)
                 body.Material = premultMat;
@@ -37,9 +40,7 @@ public partial class WatcherNCreatureVisuals : NCreatureVisuals
         }
         //StancePower.EnsureEyeSetup(Body);
     }
-    
-    
-    
+
 
     private void SetupEye()
     {
