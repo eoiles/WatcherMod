@@ -10,9 +10,9 @@ namespace Watcher.Code.Cards.Uncommon;
 [Pool(typeof(WatcherCardPool))]
 public sealed class SandsOfTime : WatcherCardModel
 {
-    public SandsOfTime() : base(4, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public SandsOfTime() : base(6, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
-        WithDamage(20, 6);
+        WithDamage(40, 12);
         WithKeywords(CardKeyword.Retain);
     }
 
