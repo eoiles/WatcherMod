@@ -13,7 +13,7 @@ public sealed class Vigilance : WatcherCardModel
 {
     public Vigilance() : base(2, CardType.Skill, CardRarity.Basic, TargetType.Self)
     {
-        WithBlock(8, 4);
+        WithBlock(8);
         WithStanceTip<CalmStance>();
     }
 
@@ -21,5 +21,9 @@ public sealed class Vigilance : WatcherCardModel
     {
         await CommonActions.CardBlock(this, cardPlay);
         await StanceCmd.EnterCalm(ctx, Owner, cardPlay.Card);
+    }
+        protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
     }
 }
