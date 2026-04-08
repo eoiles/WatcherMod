@@ -12,7 +12,7 @@ namespace Watcher.Code.Cards.Rare;
 [Pool(typeof(WatcherCardPool))]
 public sealed class Alpha : WatcherCardModel
 {
-    public Alpha() : base(1, CardType.Skill, CardRarity.Rare, TargetType.Self)
+    public Alpha() : base(0, CardType.Skill, CardRarity.Rare, TargetType.Self)
     {
         WithKeywords(CardKeyword.Exhaust);
         HoverTipFactory.FromCardWithCardHoverTips<Beta>()

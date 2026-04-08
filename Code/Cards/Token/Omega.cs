@@ -10,7 +10,7 @@ namespace Watcher.Code.Cards.Token;
 [Pool(typeof(TokenCardPool))]
 public sealed class Omega : WatcherCardModel
 {
-    public Omega() : base(3, CardType.Power, CardRarity.Token, TargetType.None)
+    public Omega() : base(2, CardType.Power, CardRarity.Token, TargetType.None)
     {
         WithPower<OmegaPower>(50, 10);
     }

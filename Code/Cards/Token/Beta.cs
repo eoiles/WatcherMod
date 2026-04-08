@@ -10,7 +10,7 @@ namespace Watcher.Code.Cards.Token;
 [Pool(typeof(TokenCardPool))]
 public sealed class Beta : WatcherCardModel
 {
-    public Beta() : base(2, CardType.Skill, CardRarity.Token, TargetType.Self)
+    public Beta() : base(1, CardType.Skill, CardRarity.Token, TargetType.Self)
     {
         WithKeywords(CardKeyword.Exhaust);
         WithTip(typeof(Omega));
