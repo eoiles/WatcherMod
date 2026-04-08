@@ -15,11 +15,11 @@ public sealed class WindmillStrike : WatcherCardModel
 
     private decimal _extraDamageFromRetains;
 
-    public WindmillStrike() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public WindmillStrike() : base(3, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
         WithTags(CardTag.Strike);
-        WithDamage(7, 3);
-        WithVar(RetainedIncreaseKey, 4, 1);
+        WithDamage(14, 6);
+        WithVar(RetainedIncreaseKey, 8, 2);
         WithKeywords(CardKeyword.Retain);
     }
 
