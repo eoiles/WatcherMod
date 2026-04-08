@@ -14,6 +14,7 @@ public sealed class SpiritShield : WatcherCardModel
     public SpiritShield() : base(2, CardType.Skill, CardRarity.Rare, TargetType.Self)
     {
         WithBlock(3, 1);
+        WithKeywords(CardKeyword.Retain);
     }
 
     private static decimal Calc(Player player)
