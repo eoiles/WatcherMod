@@ -12,7 +12,7 @@ public sealed class Swivel : WatcherCardModel
 {
     public Swivel() : base(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
     {
-        WithBlock(8, 3);
+        WithBlock(8);
         WithPower<FreeAttackPower>(1);
     }
 
@@ -21,5 +21,9 @@ public sealed class Swivel : WatcherCardModel
     {
         await CommonActions.CardBlock(this, cardPlay);
         await CommonActions.ApplySelf<FreeAttackPower>(this);
+    }
+        protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
     }
 }
