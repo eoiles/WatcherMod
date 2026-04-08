@@ -15,7 +15,7 @@ public sealed class PressurePoints : WatcherCardModel
 {
     public PressurePoints() : base(1, CardType.Skill, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithPower<MarkPower>(8, 3);
+        WithPower<MarkPower>(12, 4);
     }
 
     private static decimal Calc(Creature? target)
