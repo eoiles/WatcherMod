@@ -14,7 +14,7 @@ public sealed class WaveOfTheHand : WatcherCardModel
 {
     public WaveOfTheHand() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
     {
-        WithPower<WaveOfTheHandPower>(1, 1);
+        WithPower<WaveOfTheHandPower>(1);
         WithTip(typeof(WeakPower));
         WithTip(StaticHoverTip.Block);
     }
@@ -22,5 +22,9 @@ public sealed class WaveOfTheHand : WatcherCardModel
     protected override async Task OnPlay(PlayerChoiceContext choiceContext, CardPlay cardPlay)
     {
         await CommonActions.ApplySelf<WaveOfTheHandPower>(this);
+    }
+        protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
     }
 }
