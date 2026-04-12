@@ -7,15 +7,15 @@ using Watcher.Code.Character;
 using Watcher.Code.Commands;
 using Watcher.Code.Keywords;
 
-namespace Watcher.Code.Cards.Common;
+namespace Watcher.Code.Cards.Uncommon;
 
 [Pool(typeof(WatcherCardPool))]
 public sealed class CutThroughFate : WatcherCardModel
 {
-    public CutThroughFate() : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+    public CutThroughFate() : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
         WithDamage(7, 2);
-        WithCards(2, 1);
+        WithCards(3, 2);
         WithTip(WatcherKeywords.Scry);
     }
 
