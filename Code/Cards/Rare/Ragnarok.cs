@@ -13,8 +13,8 @@ public sealed class Ragnarok : WatcherCardModel
 {
     public Ragnarok() : base(3, CardType.Attack, CardRarity.Rare, TargetType.RandomEnemy)
     {
-        WithDamage(5, 1);
-        WithVars(new RepeatVar(5).WithUpgrade(1));
+        WithDamage(3, 1);
+        WithVars(new RepeatVar(8).WithUpgrade(1));
     }
 
 

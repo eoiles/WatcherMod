@@ -10,9 +10,9 @@ namespace Watcher.Code.Cards.Common;
 [Pool(typeof(WatcherCardPool))]
 public sealed class EmptyBody : WatcherCardModel
 {
-    public EmptyBody() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
+    public EmptyBody() : base(0, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
-        WithBlock(7, 3);
+        WithBlock(5, 3);
     }
 
 

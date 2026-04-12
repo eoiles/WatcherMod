@@ -12,7 +12,7 @@ namespace Watcher.Code.Cards.Uncommon;
 [Pool(typeof(WatcherCardPool))]
 public sealed class FearNoEvil : WatcherCardModel
 {
-    public FearNoEvil() : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public FearNoEvil() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
         WithDamage(8, 3);
         WithStanceTip<CalmStance>();
@@ -31,5 +31,10 @@ public sealed class FearNoEvil : WatcherCardModel
 
         await CommonActions.CardAttack(this, cardPlay).Execute(ctx);
         if (hasAttackIntent) await StanceCmd.EnterCalm(ctx, Owner, cardPlay.Card);
+    }
+
+        protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
     }
 }

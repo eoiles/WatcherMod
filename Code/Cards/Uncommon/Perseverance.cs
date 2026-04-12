@@ -14,10 +14,10 @@ public sealed class Perseverance : WatcherCardModel
 
     private decimal _extraBlockFromRetains;
 
-    public Perseverance() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
+    public Perseverance() : base(2, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
     {
-        WithBlock(5, 2);
-        WithVar(IncreaseKey, 2, 1);
+        WithBlock(10, 4);
+        WithVar(IncreaseKey, 4, 2);
         WithKeywords(CardKeyword.Retain);
     }
 

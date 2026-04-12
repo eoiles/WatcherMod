@@ -13,7 +13,7 @@ public sealed class Sanctity : WatcherCardModel
     public Sanctity() : base(1, CardType.Skill, CardRarity.Uncommon, TargetType.Self)
     {
         WithBlock(6, 3);
-        WithCards(2);
+        WithCards(2, 1);
     }
 
     protected override bool ShouldGlowGoldInternal => WasLastCardPlayedSkill;
@@ -39,4 +39,5 @@ public sealed class Sanctity : WatcherCardModel
         await CommonActions.CardBlock(this, cardPlay);
         if (WasLastCardPlayedSkill) await CommonActions.Draw(this, ctx);
     }
+
 }

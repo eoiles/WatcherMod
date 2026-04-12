@@ -14,9 +14,9 @@ namespace Watcher.Code.Cards.Uncommon;
 [Pool(typeof(WatcherCardPool))]
 public sealed class Tantrum : WatcherCardModel
 {
-    public Tantrum() : base(1, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public Tantrum() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
-        WithDamage(3);
+        WithDamage(3,1);
         WithVars(new RepeatVar(3).WithUpgrade(1));
         WithStanceTip<WrathStance>();
     }
@@ -30,4 +30,5 @@ public sealed class Tantrum : WatcherCardModel
         await Cmd.Wait(0.25f);
         await CardPileCmd.Add(this, PileType.Draw, CardPilePosition.Random);
     }
+
 }

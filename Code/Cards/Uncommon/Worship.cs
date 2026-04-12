@@ -23,4 +23,10 @@ public sealed class Worship : WatcherCardModel
     {
         await CommonActions.ApplySelf<MantraPower>(this);
     }
+
+    //能量减少1
+    protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
+    }
 }

@@ -10,9 +10,9 @@ namespace Watcher.Code.Cards.Common;
 [Pool(typeof(WatcherCardPool))]
 public sealed class EmptyFist : WatcherCardModel
 {
-    public EmptyFist() : base(1, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
+    public EmptyFist() : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithDamage(9, 5);
+        WithDamage(6, 3);
     }
 
     protected override async Task OnPlay(PlayerChoiceContext ctx, CardPlay cardPlay)

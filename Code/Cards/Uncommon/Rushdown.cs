@@ -11,7 +11,7 @@ namespace Watcher.Code.Cards.Uncommon;
 [Pool(typeof(WatcherCardPool))]
 public sealed class Rushdown : WatcherCardModel
 {
-    public Rushdown() : base(1, CardType.Power, CardRarity.Uncommon, TargetType.None)
+    public Rushdown() : base(2, CardType.Power, CardRarity.Uncommon, TargetType.None)
     {
         WithPower<RushdownPower>(2);
         WithStanceTip<WrathStance>();

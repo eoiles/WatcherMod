@@ -16,7 +16,7 @@ public sealed class Wallop : WatcherCardModel
 {
     public Wallop() : base(2, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
     {
-        WithDamage(9, 3);
+        WithDamage(9);
         WithTip(StaticHoverTip.Block);
     }
 
@@ -41,5 +41,10 @@ public sealed class Wallop : WatcherCardModel
                 ValueProp.Move,
                 null
             );
+    }
+
+    protected override void OnUpgrade()
+    {
+        EnergyCost.UpgradeBy(-1);
     }
 }

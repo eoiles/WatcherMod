@@ -11,10 +11,10 @@ namespace Watcher.Code.Cards.Common;
 [Pool(typeof(WatcherCardPool))]
 public sealed class Prostrate : WatcherCardModel
 {
-    public Prostrate() : base(0, CardType.Skill, CardRarity.Common, TargetType.Self)
+    public Prostrate() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
         WithBlock(4);
-        WithPower<MantraPower>(2, 1);
+        WithPower<MantraPower>(3, 1);
         WithStanceTip<DivinityStance>();
     }
 
