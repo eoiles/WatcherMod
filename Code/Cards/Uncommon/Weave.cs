@@ -8,12 +8,12 @@ using Watcher.Code.Character;
 using Watcher.Code.Events;
 using Watcher.Code.Keywords;
 
-namespace Watcher.Code.Cards.Uncommon;
+namespace Watcher.Code.Cards.Common;
 
 [Pool(typeof(WatcherCardPool))]
 public sealed class Weave : WatcherCardModel, IOnScryed
 {
-    public Weave() : base(0, CardType.Attack, CardRarity.Uncommon, TargetType.AnyEnemy)
+    public Weave() : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
         WithDamage(4, 2);
         WithTip(WatcherKeywords.Scry);
