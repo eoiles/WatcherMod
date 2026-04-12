@@ -13,9 +13,9 @@ public sealed class JustLucky : WatcherCardModel
 {
     public JustLucky() : base(0, CardType.Attack, CardRarity.Common, TargetType.AnyEnemy)
     {
-        WithCards(1, 1);
-        WithBlock(2, 1);
-        WithDamage(3, 1);
+        WithCards(2, 1);
+        WithBlock(3, 1);
+        WithDamage(4, 1);
         WithTip(WatcherKeywords.Scry);
     }
 
