@@ -13,7 +13,7 @@ public sealed class Prostrate : WatcherCardModel
 {
     public Prostrate() : base(1, CardType.Skill, CardRarity.Common, TargetType.Self)
     {
-        WithBlock(4);
+        WithBlock(4,1);
         WithPower<MantraPower>(3, 1);
         WithStanceTip<DivinityStance>();
     }
